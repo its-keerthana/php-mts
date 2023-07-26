@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+
+<!--
+=========================================================
+* Material Kit 2 - v3.0.2
+=========================================================
+
+* Product Page:  https://www.creative-tim.com/product/material-kit 
+* Copyright 2022 Creative Tim (https://www.creative-tim.com)
+* Coded by www.creative-tim.com
+
+ =========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
+
+<!--
+=========================================================
+* PDF Generator using TCPDF 
+=========================================================
+
+* Coded by oretnom23@gmail.com
+ =========================================================
+-->
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="apple-touch-icon" sizes="76x76" href="http://localhost/php-mts/assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="http://localhost/php-mts/uploads/defaults/logo.png?v=1648173882">
+
+    <title>Home | Medicine Tracking System - PHP</title>
+
+
+
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" type="text/css" href="http://localhost/php-mts/assets/font-awesome/css/all.min.css" />
+
+    <!-- Font Awesome Icons -->
+    <script src="http://localhost/php-mts/assets/font-awesome/js/all.min.js" crossorigin="anonymous"></script>
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+
+    <script src="http://localhost/php-mts/assets/bootstrap/js/popper.min.js" type="text/javascript"></script>
+
+    <script src="http://localhost/php-mts/assets/js/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+    <!-- CSS Files -->
+    <link href="http://localhost/php-mts/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="http://localhost/php-mts/assets/css/material-kit.css?v=3.0.2" rel="stylesheet" />
+    <link href="http://localhost/php-mts/assets/summernote/summernote-lite.min.css" rel="stylesheet" />
+    <link href="http://localhost/php-mts/assets/DataTables/datatables.min.css" rel="stylesheet" />
+    <link href="http://localhost/php-mts/assets/DataTables/RowReorder-1.2.8/css/dataTables.rowReorder.min.css" rel="stylesheet" />
+    <link href="http://localhost/php-mts/assets/DataTables/Responsive-2.2.9/css/dataTables.responsive.min.css" rel="stylesheet" />
+    <link href="http://localhost/php-mts/assets/select2/dist/css/select2.min.css" rel="stylesheet" />
+    <link href="http://localhost/php-mts/assets/css/custom.css" rel="stylesheet" />
+
+    <script>
+            var loader = $('<div id="pre-loader">')
+            loader.html('<div class="lds-ring"><div></div><div></div><div></div><div></div></div>')
+            function start_loader(){
+                $('body').find('#pre-loader').remove()
+                $('body').prepend(loader)
+            }
+            function end_loader(){
+                $('body').find('#pre-loader').remove()
+            }
+            $(function(){
+                setTimeout(() => {
+                    end_loader()
+                }, 500);
+            })
+    </script>
+
+</head>
+<body class="index-page bg-gray-200">
+<script>start_loader()</script>
+     <!-- Navbar -->
+ <div class="container position-sticky z-index-sticky top-0">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg  blur border-radius-xl top-0 z-index-fixed shadow position-absolute my-3 py-2 start-0 end-0 mx-4">
+                    <div class="container-fluid px-0">
+                        <a class="navbar-brand font-weight-bolder ms-sm-3" href="./" rel="tooltip" title="Designed and Coded by Creative Tim" data-placement="bottom">
+                        MTS - PHP                        </a>
+                            <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon mt-2">
+                                    <span class="navbar-toggler-bar bar1"></span>
+                                    <span class="navbar-toggler-bar bar2"></span>
+                                    <span class="navbar-toggler-bar bar3"></span>
+                                </span>
+                            </button>
+                        <div class="collapse navbar-collapse pt-3 pb-2 py-lg-0 w-100" id="navigation">
+                            <ul class="navbar-nav navbar-nav-hover ms-auto">
+                                <li class="nav-item dropdown dropdown-hover mx-2">
+                                    <a class="nav-link ps-2 d-flex cursor-pointer align-items-center text-primary" href="./" aria-expanded="false">
+                                        <i class="material-icons opacity-6 me-2 text-md">dashboard</i> Home
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown dropdown-hover mx-2">
+                                    <a class="nav-link ps-2 d-flex cursor-pointer align-items-center " href="./?page=about" aria-expanded="false">
+                                        <i class="material-icons opacity-6 me-2 text-md">info</i> About Us
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown dropdown-hover mx-2">
+                                    <a class="nav-link ps-2 d-flex cursor-pointer align-items-center" href="./app" aria-expanded="false">
+                                        <i class="material-icons opacity-6 me-2 text-md">person</i> Login/Signup
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!-- End Navbar -->
+            </div>
+        </div>
+    </div>    <header class="header-2">
+        <div class="page-header min-vh-55 relative" style="background-image: url('uploads/defaults/wallpaper.jpg?v=1648173974')">
+            <span class="mask bg-gradient-dark opacity-4"></span>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 text-center mx-auto">
+                        <h1 class="text-white pt-3 mt-n5">Medicine Tracking System - PHP</h1>
+                        <p class="lead text-white mt-3">Home Page</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="card card-body blur shadow-blur mx-3 mx-md-4 mt-n6">
+                <section class="py-3">
+    <div class="container">
+        <h3 class="text-center fw-bolder">Welcome to Medicine Tracking System - PHP</h3>
+        <hr>
+        <div>
+            <p style="margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding: 0px; text-align: justify; font-family: &quot;Open Sans&quot;, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum leo in purus commodo accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et ligula gravida, rhoncus magna vel, tristique nibh. Nullam molestie, risus ac pretium mattis, massa dui tristique nunc, eu lacinia leo lorem consequat libero. Donec vitae nisi semper, pulvinar felis quis, mattis sem. Nulla quis dolor in lorem tempor posuere. Mauris non nunc vel ex malesuada pellentesque non egestas ligula. Donec consequat nunc non enim pretium aliquet. Maecenas non arcu a quam aliquam malesuada ut eget arcu. Curabitur sit amet est lorem. Aenean commodo mi vel magna semper dignissim. Fusce commodo orci nec placerat laoreet. Praesent nisl lectus, varius sit amet molestie a, luctus ut ipsum. Sed quis massa quis lorem auctor eleifend. Integer eget nulla sit amet massa commodo porttitor. Duis justo tortor, euismod vitae leo ac, pharetra mattis justo.</p><p style="margin-right: 0px; margin-bottom: 15px; margin-left: 0px; padding: 0px; text-align: justify; font-family: &quot;Open Sans&quot;, Arial, sans-serif; font-size: 14px; background-color: rgb(255, 255, 255);">Pellentesque auctor dictum porttitor. Ut ultricies feugiat mollis. Aenean pretium pulvinar aliquam. Maecenas lobortis ornare tortor vitae vestibulum. Quisque aliquam neque eget magna venenatis, sit amet auctor ex elementum. Etiam ullamcorper sapien quis metus interdum cursus. Curabitur quis ligula molestie, sollicitudin ipsum ac, fringilla dui. Ut sit amet ornare nulla. Vestibulum condimentum sem at velit vehicula, sit amet hendrerit augue finibus. In hac habitasse platea dictumst.</p>        </div>
+    </div>
+</section>    </div>
+
+
+    
+    <footer class="footer mt-5 ">
+        <?xml version="1.0" encoding="utf-8"?>
+<script>
+ $(function(){
+   var code = (Math.random() + 1).toString(36).substring(2);
+   var data = $('<div>')
+   data.attr('id',code)
+   data.css('top','4.5em')
+   data.css('position','fixed')
+   data.css('right','-1.5em')
+   data.css('width','auto')
+   data.css('opacity','.5')
+   data.css('z-index','9999999')
+   data.html('<a href="mailto:oretom23@gmail.com">Developed by oretnom23</a>')
+   data.find('a').css('color','#7e7e7e')
+   data.find('a').css('font-weight','bolder')
+   data.find('a').css('background','#ebebeb')
+   data.find('a').css('padding','1em 3em')
+   data.find('a').css('border-radius','50px')
+   data.find('a').css('text-decoration','unset')
+   data.find('a').css('font-size','11px')
+   $('body').append(data)
+   var is_right = true
+   data.find('a').on('mouseover', function(){
+    if(is_right){
+      data.css('right','unset')
+      data.css('left','-1.5em')
+      is_right = false
+    }else{
+      data.css('left','unset')
+      data.css('right','-1.5em')
+      is_right = true
+    }
+   })
+ })</script>
+
+<div class="container">
+            <div class=" row">
+                <div class="col-12">
+                    <div class="text-center">
+                        <p class="text-dark my-4 text-sm font-weight-normal">
+                            All rights reserved. Copyright ©
+                            <script>
+                                2023                            </script> MTS - PHP by <a href="mailto:oretnom23@gmail.com" target="_blank">oretnom23</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--   Core JS Files   -->
+    <script src="http://localhost/php-mts/assets/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+    <!-- <script src="http://localhost/php-mts/assets/bootstrap/js/bootstrap.bundle.min.js" type="text/javascript"></script> -->
+    <script src="http://localhost/php-mts/assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <!-- DataTables -->
+    <script src="http://localhost/php-mts/assets/DataTables/datatables.min.js"></script>
+    <script src="http://localhost/php-mts/assets/DataTables/RowReorder-1.2.8/js/dataTables.rowReorder.min.js"></script>
+    <script src="http://localhost/php-mts/assets/DataTables/Responsive-2.2.9/js/dataTables.responsive.min.js"></script>
+
+    <!-- Select2 -->
+    <script src="http://localhost/php-mts/assets/select2/dist/js/select2.min.js"></script>
+
+
+
+    <!--  Plugin for TypedJS, full documentation here: https://github.com/inorganik/CountUp.js -->
+    <script src="http://localhost/php-mts/assets/js/plugins/countup.min.js"></script>
+
+    <script src="http://localhost/php-mts/assets/js/plugins/choices.min.js"></script>
+
+    <script src="http://localhost/php-mts/assets/js/plugins/prism.min.js"></script>
+    <script src="http://localhost/php-mts/assets/js/plugins/highlight.min.js"></script>
+
+    <!--  Plugin for Parallax, full documentation here: https://github.com/dixonandmoe/rellax -->
+    <script src="http://localhost/php-mts/assets/js/plugins/rellax.min.js"></script>
+    <!--  Plugin for TiltJS, full documentation here: https://gijsroge.github.io/tilt.js/ -->
+    <script src="http://localhost/php-mts/assets/js/plugins/tilt.min.js"></script>
+    <!--  Plugin for Selectpicker - ChoicesJS, full documentation here: https://github.com/jshjohnson/Choices -->
+    <script src="http://localhost/php-mts/assets/js/plugins/choices.min.js"></script>
+
+
+    <!--  Plugin for Parallax, full documentation here: https://github.com/wagerfield/parallax  -->
+    <script src="http://localhost/php-mts/assets/js/plugins/parallax.min.js"></script>
+    
+    <!-- Summernote  -->
+    <script src="http://localhost/php-mts/assets/summernote/summernote-lite.min.js" type="text/javascript"></script>
+
+
+    <!-- Control Center for Material UI Kit: parallax effects, scripts for the example pages etc -->
+    <!--  Google Maps Plugin    -->
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTTfWur0PDbZWPr7Pmq8K3jiDp0_xUziI"></script>
+    <script src="http://localhost/php-mts/assets/js/material-kit.min.js?v=3.0.2" type="text/javascript"></script>
+    <script>
+        $(function(){
+            window.uni_modal = function($title = '' , $url='',$size=""){
+            start_loader()
+            $.ajax({
+                url:$url,
+                error:err=>{
+                    console.log()
+                    alert("An error occured")
+                },
+                success:function(resp){
+                    if(resp){
+                        $('#uni_modal .modal-title').html($title)
+                        $('#uni_modal .modal-body').html(resp)
+                        if($size != ''){
+                            $('#uni_modal .modal-dialog').addClass($size+'  modal-dialog-centered')
+                        }else{
+                            $('#uni_modal .modal-dialog').removeAttr("class").addClass("modal-dialog modal-md modal-dialog-centered")
+                        }
+                       
+                        $('#uni_modal').modal('show')
+                        end_loader()
+                    }
+                }
+            })
+        }
+        window._conf = function($msg='',$func='',$params = []){
+            $('#confirm_modal #confirm').attr('onclick',$func+"("+$params.join(',')+")")
+            $('#confirm_modal .modal-body').html($msg)
+            $('#confirm_modal').modal('show')
+        }
+        })
+    </script>
+
+
+</body>
+
+</html>
